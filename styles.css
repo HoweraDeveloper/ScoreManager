@@ -1,0 +1,30 @@
+/* 基本樣式 */
+body {
+    background-color: #f8f9fa;
+}
+
+#studentList {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.student-item {
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.score-animation {
+    animation: pop-in 0.5s ease;
+}
+
+@keyframes pop-in {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
